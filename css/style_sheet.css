@@ -1,12 +1,24 @@
-h1{
+h1.title{
   color: #CE8585;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 ul.nav li{
+  position: sticky;
+  font-weight: bold;
+  font-size: 20px;
   display: inline-block;
+  float: none;
   background-color: #CE8585;
 }
 
+ul.nav{
+  background-color: #CE8585;
+  text-align: center;
+}
+
 a{
-  color: #5A4C4C;
+  color: #808080;
 }
