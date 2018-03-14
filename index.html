@@ -4,17 +4,24 @@
       <link rel="stylesheet" type="text/css" href="css/style_sheet.css">
       <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="Javascript/script.js"></script>
     </head>
     <body>
-      <h1 class="title">For the Love of Food</h1>
+      <div class="header">
+        <h1 id="title">For the Love of Food</h1>
+        <input type="text" placeholder="Search..">
+      </div>
       <div>
         <ul class='nav'>
-          <li><a href="#explanation">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#recipes">Recipes</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#contact">Contact us</a></li>
+          <li> <input class="Explanation" type="button" value="Home"></li>
+          <li> <input class="about" type="button" value="About"></li>
+          <li> <input class="recipes" type="button" value="Recipes"></li>
+          <li> <input class="articles" type="button" value="Articles"> </li>
+          <li> <input class="contact" type="button" value="Contact us" onclick = "contact();"> </li>
         </ul>
+      </div>
+      <div>
+        <p> Rest of site </p>
       </div>
     </body>
   </html>

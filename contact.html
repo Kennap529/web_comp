@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/style_sheet.css">
+      <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+      <script src="script.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <div class="header">
+        <h1 id="title">For the Love of Food</h1>
+        <input type="text" placeholder="Search..">
+      </div>
+      <div>
+        <ul class='nav'>
+          <li> <input class="Explanation" type="button" value="Home"></li>
+          <li> <input class="about" type="button" value="About"></li>
+          <li> <input class="recipes" type="button" value="Recipes"></li>
+          <li> <input class="articles" type="button" value="Articles"> </li>
+          <li> <input class="contact" type="button" value="Contact us"> </li>
+        </ul>
+      </div>
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </body>
