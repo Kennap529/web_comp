@@ -3,6 +3,7 @@
     <head>
       <link rel="stylesheet" type="text/css" href="css/style_sheet.css">
       <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script type="text/javascript" src="Javascript/script.js"></script>
     </head>
@@ -10,6 +11,12 @@
       <div class="header">
         <h1 id="title">For the Love of Food</h1>
         <input type="text" placeholder="Search..">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
       </div>
       <div>
         <ul class='nav'>
@@ -21,11 +28,14 @@
         </ul>
       </div>
       <div class="container">
+        <h2 class="page_title"> Contact Us </h2>
         <form action="action_page.php">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email address...">
           <label for="country">Country</label>
           <select id="country" name="country">
             <option value="australia">Australia</option>
@@ -41,7 +51,7 @@
             <option value="usa">USA</option>
           </select>
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
           <input type="button" value="Submit" onclick="home()">
         </form>
       </div>

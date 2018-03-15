@@ -1,13 +1,75 @@
 div {
   background-color: #D0D0D0;
-  background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 div.header {
   background-image: url("../images/header_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  grid-column-gap: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+h1#title {
+  color: #CE8585;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Pinterest */
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/* Snapchat */
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 div.header input {
@@ -21,17 +83,11 @@ div.header input {
     font-size: 17px;
 }
 
-h1#title {
-  color: #CE8585;
-  text-align: center;
-  font-weight: bold;
-  font-size: 100px;
-}
-
 ul.nav li {
   position: sticky;
   font-weight: bold;
   font-size: 20px;
+  font-family: Helvetica;
   display: inline-block;
   float: none;
   background-color: #CE8585;
@@ -41,6 +97,7 @@ ul.nav li input.explanation{
   position: sticky;
   font-weight: bold;
   font-size: 20px;
+  font-family: Helvetica;
   display: inline-block;
   float: none;
   background-color: #CE8585;
@@ -50,6 +107,7 @@ ul.nav li input.explanation{
 ul.nav li input.about{
   position: sticky;
   font-weight: bold;
+  font-family: Helvetica;
   font-size: 20px;
   display: inline-block;
   float: none;
@@ -61,6 +119,7 @@ ul.nav li input.recipes{
   position: sticky;
   font-weight: bold;
   font-size: 20px;
+  font-family: Helvetica;
   display: inline-block;
   float: none;
   background-color: #CE8585;
@@ -70,6 +129,7 @@ ul.nav li input.recipes{
 ul.nav li input.articles{
   position: sticky;
   font-weight: bold;
+  font-family: Helvetica;
   font-size: 20px;
   display: inline-block;
   float: none;
@@ -80,6 +140,7 @@ ul.nav li input.articles{
 ul.nav li input.contact{
   position: sticky;
   font-weight: bold;
+  font-family: Helvetica;
   font-size: 20px;
   display: inline-block;
   float: none;
@@ -89,7 +150,7 @@ ul.nav li input.contact{
 
 ul.nav {
   background-color: #CE8585;
-  text-align: center;
+  text-align: left;
 }
 
 a {
@@ -108,7 +169,7 @@ form input[type=text], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type=button] {
   background-color: #CE8585;
   color: black;
   padding: 12px 20px;
@@ -118,7 +179,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type=button]:hover {
   background-color: #F4C2C2;
 }
 
@@ -127,4 +188,55 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #D0D0D0;
   padding: 50px;
+}
+
+h2.page_title {
+  color: #CE8585;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+}
+
+img#home_head{
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p#intro{
+  color: #812D2D;
+  text-align: center;
+  font-size: 20px;
+  font-family: Helvetica;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+}
+
+p.sign{
+  color: #812D2D;
+  text-align: center;
+  font-size: 40px;
+  font-family: Brush Script MT, cursive;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: : 0;
+  margin: 0;
+}
+
+footer{
+  background-color: #CE8585;
+  position: bottom;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
