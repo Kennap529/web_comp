@@ -17,7 +17,7 @@
           <li> <input class="about" type="button" value="About" onclick="about()"></li>
           <li> <input class="recipes" type="button" value="Recipes" onclick="recipes()"></li>
           <li> <input class="articles" type="button" value="Articles" onclick="articles()"> </li>
-          <li> <input class="contact" type="button" value="Contact us" onclick = "contact();"> </li>
+          <li> <input class="contact" type="button" value="Contact us" onclick = "contact()"> </li>
         </ul>
       </div>
       <div class="container">
@@ -29,12 +29,20 @@
           <label for="country">Country</label>
           <select id="country" name="country">
             <option value="australia">Australia</option>
+            <option value="belgium">Belgium</option>
             <option value="canada">Canada</option>
+            <option value="china">China</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="japan">Japan</option>
+            <option value="morocco">Morocco</option>
+            <option value="new zealand">New Zealand</option>
+            <option value="uk">UK</option>
             <option value="usa">USA</option>
           </select>
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          <input type="submit" value="Submit">
+          <input type="button" value="Submit" onclick="home()">
         </form>
       </div>
     </body>
