@@ -1,7 +1,11 @@
-div {
+/* Formatting for all HTML files */
+
+div.main_text {
   background-color: #D0D0D0;
   padding: 0;
   margin: 0;
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 div.header {
@@ -157,37 +161,27 @@ a {
   color: #808080;
 }
 
-form input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=button] {
+footer{
   background-color: #CE8585;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  position: bottom;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=button]:hover {
-  background-color: #F4C2C2;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #D0D0D0;
-  padding: 50px;
+p{
+  color: #812D2D;
+  text-align: center;
+  font-size: 17.5px;
+  font-family: Helvetica;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: : 0;
+  margin: 0;
 }
 
 h2.page_title {
@@ -199,6 +193,8 @@ h2.page_title {
   padding: 0;
   margin: 0;
 }
+
+/* Index specific formatting */
 
 img#home_head{
   border-radius: 8px;
@@ -230,13 +226,125 @@ p.sign{
   margin: 0;
 }
 
-footer{
-  background-color: #CE8585;
-  position: bottom;
+/* About specific formatting */
+
+/* Recipes specific formatting */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #812D2D;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
   right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #812D2D;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
+}
+
+.numbertext {
+  color: #812D2D;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Contact form specific formatting */
+
+form input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=button] {
+  background-color: #CE8585;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=button]:hover {
+  background-color: #F4C2C2;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #D0D0D0;
+  padding: 50px;
 }
